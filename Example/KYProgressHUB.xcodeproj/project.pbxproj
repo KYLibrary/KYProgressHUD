@@ -61,11 +61,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E089BD59882E82FDCFA7FA4 /* Pods_KYProgressHUB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYProgressHUB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F6DF12C2F019DAED1A6B68C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9F6DF12C2F019DAED1A6B68C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A2CDF8BE4152DA9B5585A1BC /* Pods-KYProgressHUB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYProgressHUB_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KYProgressHUB_Tests/Pods-KYProgressHUB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B0DB00E84CFB6A44F5D317E9 /* KYProgressHUB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KYProgressHUB.podspec; path = ../KYProgressHUB.podspec; sourceTree = "<group>"; };
+		B0DB00E84CFB6A44F5D317E9 /* KYProgressHUB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KYProgressHUB.podspec; path = ../KYProgressHUB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B8BE2E93CD363FC6AE8F873B /* Pods_KYProgressHUB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYProgressHUB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2B8FBA32B442B2A8FD9799A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C2B8FBA32B442B2A8FD9799A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FBC566DC9A273FAFB75970DD /* Pods-KYProgressHUB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYProgressHUB_Tests.release.xcconfig"; path = "Target Support Files/Pods-KYProgressHUB_Tests/Pods-KYProgressHUB_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				A2CDF8BE4152DA9B5585A1BC /* Pods-KYProgressHUB_Tests.debug.xcconfig */,
 				FBC566DC9A273FAFB75970DD /* Pods-KYProgressHUB_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -356,12 +356,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KYProgressHUB_Example/Pods-KYProgressHUB_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KYProgressHUB/KYProgressHUB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYProgressHUB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,27 @@
+{
+  "name": "KYProgressHUB",
+  "version": "0.1.0",
+  "summary": "A short description of KYProgressHUB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kyleboy/KYProgressHUB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kyleboy": "iyinghui@163.com"
+  },
+  "source": {
+    "git": "https://github.com/kyleboy/KYProgressHUB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KYProgressHUB/Classes/**/*",
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ]
+  }
+}
