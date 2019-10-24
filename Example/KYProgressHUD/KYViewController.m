@@ -7,7 +7,7 @@
 //
 
 #import "KYViewController.h"
-#import "MBProgressHUD+KY.h"
+#import "KYProgressHUD.h"
 
 @interface KYViewController ()
 
@@ -31,22 +31,28 @@
     switch (sender.tag) {
         case 1:
             [MBProgressHUD showWithDetails:@"提示1测试"];
-        break;
+            break;
         case 2:
             [MBProgressHUD showWithDetails:@"提示2测试" afterDelay:1];
-        break;
+            break;
         case 3:
             [MBProgressHUD showMessage:@"" toView:nil];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [MBProgressHUD hideHUD];
             });
-        break;
+            break;
         case 4:
-           [MBProgressHUD showMessage:@"加载中" toView:nil];
-           dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-               [MBProgressHUD hideHUD];
-           });
-        break;
+            [MBProgressHUD showMessage:@"加载中" toView:nil];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [MBProgressHUD hideHUD];
+            });
+            break;
+        case 5:
+            [MBProgressHUD showSuccess:@"成功"];
+            break;
+        case 6:
+            [MBProgressHUD showError:@"失败"];
+            break;
         
         default:
         break;

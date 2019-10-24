@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/kyleboy/KYProgressHUD'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kyleboy' => 'iyinghui@163.com' }
+  s.author           = { 'kyleboy' => 'kyleboy@126.com' }
   s.source           = { :git => 'https://github.com/kyleboy/KYProgressHUD.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'KYProgressHUD/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'KYProgressHUB' => ['KYProgressHUB/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'KYProgressHUD' => ['KYProgressHUD/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

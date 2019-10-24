@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "KYImage.h"
+#import "KYProgressHUD.h"
 #import "MBProgressHUD+KY.h"
 
 FOUNDATION_EXPORT double KYProgressHUDVersionNumber;

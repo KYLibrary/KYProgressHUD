@@ -22,7 +22,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW0-Ob-Yd2">
                                 <rect key="frame" x="137" y="200" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="默认提示1"/>
+                                <state key="normal" title="普通提示"/>
                                 <connections>
                                     <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="ZRy-CI-E5O"/>
                                 </connections>
@@ -30,31 +30,47 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnM-dq-5pH">
                                 <rect key="frame" x="137" y="288" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="默认提示3"/>
+                                <state key="normal" title="加载中提示"/>
                                 <connections>
                                     <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="Gvh-kx-pDA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCa-io-MDU">
-                                <rect key="frame" x="137" y="326" width="100" height="30"/>
+                                <rect key="frame" x="126" y="326" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="默认提示4"/>
+                                <state key="normal" title="带文案加载中提示"/>
                                 <connections>
                                     <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="GCR-7y-sc4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-jf-OmH">
-                                <rect key="frame" x="137" y="371" width="100" height="30"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5On-7s-VQm">
+                                <rect key="frame" x="147" y="381" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="默认提示5"/>
+                                <connections>
+                                    <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="x8W-nQ-kMA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-jf-OmH">
+                                <rect key="frame" x="137" y="372" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="成功提示"/>
                                 <connections>
                                     <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="Vnb-QI-egx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-o4-nN6">
-                                <rect key="frame" x="137" y="238" width="100" height="30"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59O-lb-ZJ0">
+                                <rect key="frame" x="156" y="417" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="默认提示2"/>
+                                <state key="normal" title="失败提示"/>
+                                <connections>
+                                    <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="DPl-HC-xRf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-o4-nN6">
+                                <rect key="frame" x="103" y="250" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="普通提示可设置隐藏时间"/>
                                 <connections>
                                     <action selector="clickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="Ux7-px-AaP"/>
                                 </connections>

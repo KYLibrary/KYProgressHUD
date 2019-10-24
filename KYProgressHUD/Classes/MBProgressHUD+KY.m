@@ -7,6 +7,7 @@
 //
 
 #import "MBProgressHUD+KY.h"
+#import "KYImage.h"
 
 @implementation MBProgressHUD (KY)
 
@@ -21,8 +22,10 @@
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.animationType = MBProgressHUDAnimationFade;
+    hud.bezelView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
+    hud.contentColor = [UIColor whiteColor];
     hud.label.text = text;
-    hud.bezelView.opaque = 0.8;
+//    hud.bezelView.opaque = 0.8;
     hud.userInteractionEnabled = NO;
     hud.label.font = [UIFont systemFontOfSize:16];
     hud.margin = 8;
@@ -32,7 +35,7 @@
     hud.detailsLabel.font = [UIFont systemFontOfSize:14];
     
     // 设置图片
-    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"MBProgressHUD.bundle/%@", icon]]];
+    hud.customView = [[UIImageView alloc] initWithImage:[KYImage imageNamed:icon]];
     
     // 再设置模式
     hud.mode = MBProgressHUDModeCustomView;
@@ -89,21 +92,21 @@
 
 #pragma mark 显示错误信息
 + (void)showError:(NSString * _Nullable)error toView:(UIView * _Nullable)view{
-    [self showWithLable:nil detailsLabel:error icon:@"error.png" view:view afterDelay:2];
+    [self showWithLable:nil detailsLabel:error icon:@"tosat_error_icon" view:view afterDelay:2];
 }
 + (void)showErrorWithLabel:(NSString * _Nullable)label detailsLabel:(NSString * _Nullable)detailsLabel toView:(UIView *)view
 {
-    [self showWithLable:label detailsLabel:detailsLabel icon:@"error.png" view:view afterDelay:2];
+    [self showWithLable:label detailsLabel:detailsLabel icon:@"tosat_error_icon" view:view afterDelay:2];
 }
 
 + (void)showSuccess:(NSString * _Nullable)success toView:(UIView *)view
 {
-    [self showWithLable:nil detailsLabel:success icon:@"success.png" view:view afterDelay:2];
+    [self showWithLable:nil detailsLabel:success icon:@"tosat_success_icon" view:view afterDelay:2];
 }
 
 + (void)showSuccessWithLabel:(NSString * _Nullable)label detailsLabel:(NSString * _Nullable)detailsLabel  toView:(UIView * _Nullable)view
 {
-    [self showWithLable:label detailsLabel:detailsLabel icon:@"success.png" view:view afterDelay:2];
+    [self showWithLable:label detailsLabel:detailsLabel icon:@"tosat_success_icon" view:view afterDelay:2];
 }
 
 #pragma mark 显示一些信息
