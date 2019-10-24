@@ -1,6 +1,0 @@
-framework module KYProgressHUB {
-  umbrella header "KYProgressHUB-umbrella.h"
-
-  export *
-  module * { export * }
-}

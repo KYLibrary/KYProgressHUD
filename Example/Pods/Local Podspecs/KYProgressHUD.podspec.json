@@ -1,0 +1,27 @@
+{
+  "name": "KYProgressHUD",
+  "version": "0.1.0",
+  "summary": "A short description of KYProgressHUB.",
+  "description": "tosat方法，便捷方法封装",
+  "homepage": "https://github.com/kyleboy/KYProgressHUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kyleboy": "iyinghui@163.com"
+  },
+  "source": {
+    "git": "https://github.com/kyleboy/KYProgressHUD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KYProgressHUD/Classes/**/*",
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ]
+  }
+}

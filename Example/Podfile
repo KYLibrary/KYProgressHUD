@@ -2,10 +2,10 @@ use_frameworks!
 
 platform :ios, '8.0'
 
-target 'KYProgressHUB_Example' do
-  pod 'KYProgressHUB', :path => '../'
+target 'KYProgressHUD_Example' do
+  pod 'KYProgressHUD', :path => '../'
 
-  target 'KYProgressHUB_Tests' do
+  target 'KYProgressHUD_Tests' do
     inherit! :search_paths
 
     pod 'Specta'
